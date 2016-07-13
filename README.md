@@ -32,4 +32,4 @@ In View,
 - [ ] Sphere Animation.
 
 # **Output**
-![alt tag]()
+![alt tag](https://github.com/maheswaranapk/Android-Cradle/blob/master/sample/materialup_sample.gif)
