@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.scriptedpapers.android_cradle.MainActivity">
+
+    <com.scriptedpapers.CradleLoader
+        android:id="@+id/circleLoader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/helpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Number of Balls" />
+
+
+            <EditText
+                android:id="@+id/ballCountText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/helpText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:clickable="false"
+                android:gravity="center"
+                android:focusable="false"
+                android:layout_alignBottom="@+id/decreaseBalls" />
+
+
+            <TextView
+                android:id="@+id/decreaseBalls"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/helpText"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/circle_bg_down"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/increaseBalls"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/helpText"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/circle_bg"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/helpText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Number of Moving Balls" />
+
+
+
+
+            <EditText
+                android:id="@+id/ballMovingCountText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/helpText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:clickable="false"
+                android:gravity="center"
+                android:focusable="false"
+                android:layout_alignBottom="@+id/decreaseMovingBalls" />
+
+
+            <TextView
+                android:id="@+id/decreaseMovingBalls"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/helpText1"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/circle_bg_down"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/increaseMovingBalls"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/helpText1"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/circle_bg"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
